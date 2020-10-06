@@ -1,0 +1,39 @@
+
+body
+{
+    background-image: url(unicorn-aesthetic-wallpaper.jpg);
+    background-repeat: repeat;
+    background-size: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+	padding:25px 0px;
+	background-image: url(gradient%20copie%202.png);
+    background-repeat: repeat;
+    
+}
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li 
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
