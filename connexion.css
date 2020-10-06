@@ -1,3 +1,13 @@
+*{
+
+margin:0;
+
+padding:0;
+
+}
+
+ 
+
 
 body
 {
@@ -23,10 +33,17 @@ main
 
 header 
 {
-box-sizing: border-box;
-  position: absolute; 
- display: flex;
-justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+	background-image: url(gradient%20copie%202.png);
+    background-repeat: repeat;
+    position:absolute;
+    top:0;
+    width:100%;
+    padding-top:25px;
+    height:25px;
 }
 
 ul 
@@ -36,13 +53,13 @@ ul
   padding: 0;
   display: flex;
   flex-direction: row;
+  align-content: space-around;  
 }
 
 li 
 {
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 
@@ -81,8 +98,9 @@ footer
     position:absolute;
     bottom:0;
     width:100%;
-    padding-top:50px;
-    height:50px;
+    padding-top:25px;
+    height:25px;
+
 }
 
 ul 
@@ -101,10 +119,41 @@ li
 
 
 /*class*/
+.columns
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.paragraphe
+{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1 1 0;
+    font-size: 2em;
+    background-image: url(chat.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 400px;
+    padding: 50px;
+	border-radius: 25px;
+    margin-top: 30px;
+    justify-content: flex-end;
+   
+        
+}
+
+
 
 .formulaire
 {
-    background-image: url(chat.jpg);
+    background-image: url(chatmiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 300px;
@@ -112,25 +161,22 @@ li
 	justify-content: flex-end;
 	padding: 50px;
 	font-size: 12px;
-	box-shadow: 5px 5px 10px grey;
 	border-radius: 25px;
-    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     text-align: justify;
     margin-top: 30px;
+    
 }
-
 
 
 /*ID*/
 
 #listeNavTop {
-  background-color: mintcream;
-  padding: 20px;
   font-family: 'Piazzolla', serif;
   border-radius: 25px;
   position: fixed;
   top:0;
+   
   
 }
