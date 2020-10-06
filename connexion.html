@@ -25,25 +25,23 @@
         <main>
     <section class="columns">
 <section class="paragraphe">
-        <p><strong> Veuillez-vous vous créez un compte avant de commencer l'expérience</strong></p>    
+        <p><strong> Veuillez vous connecter à votre nouveau compte avant de commencer l'expérience</strong></p>    
 </section>
             
         <section class="formulaire">
 <form action="/ma-page-de-traitement" method="post">
     <div>
         <label for="login">Login :</label>
-        <input type="name" id="name" name="name_login">
+        <input type="name" id="name" name="name_login" required>
     </div>
     
     <div>
         <label for="password">Mot de passe :</label>
-        <input type="password" id="motdepasse" name="mot_de_passe">
+        <input type="password" id="motdepasse" name="mot_de_passe" required>
     </div>
     
     
-    <div class="submit">
-    <input type="submit" value="Valider">
-    </div>
+    <input type="submit" class="monBouton" value="Valider">
 </form>
      </section>  
     </section>
