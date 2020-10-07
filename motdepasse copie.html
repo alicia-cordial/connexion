@@ -12,39 +12,44 @@
         <header>
       <nav id="navTop">
         <ul id="listeNavTop">
-          <a href="connexion.html"><li>Connexion</li></a>
+          <a href="connexion.html"><li>Accueil</li></a>
           <a href="inscription.html"><li>Inscription</li></a>
-          <a href="motdepasse.html"><li>Mot de passe oublié</li></a>
+          <a href="motdepasse.html"><li>Mot de passe</li></a>
         </ul>
       </nav>
             <h1>Bienvenue dans "Le monde du Kitsch"</h1>
         </header>
     
     
-    <!--formulaire-->        
-        <main>
             
-    <section class="columnsII">
-<section class="paragrapheII">
-        <p><strong> Vous avez oublié votre mot de passe... C'est pas grave rentrer votre email pour changer de mot de passe </strong></p>    
+        <main>
+    <section class="columns">
+<section class="paragraphe">
+        <p><strong> Veuillez vous connecter à votre nouveau compte avant de commencer l'expérience</strong></p>    
 </section>
             
-<section class="formulaireII">
+        <section class="formulaire">
 <form action="/ma-page-de-traitement" method="post">
-      <div class="emailBox">
-   <label for="emailAddress">Votre adresse email</label><br>
-   <input id="emailAddress" type="email" size="64" maxLength="64" required
-         pattern=".+@lapleforme.io">
+    <div>
+        <label for="login">Login :</label>
+        <input type="name" id="name" name="name_login" required>
     </div>
-        
+    
+    <div>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="mot_de_passe" required>
+    </div>
+    
     
     <input type="submit" class="monBouton" value="Valider">
 </form>
-</section>  
+     </section>  
     </section>
-                  
+            
+            
+            
+            
      </main>
-      
          <!--Footer-->
     <footer>  
         <nav id="NavBottom">

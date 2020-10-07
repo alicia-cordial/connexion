@@ -12,22 +12,23 @@
         <header>
       <nav id="navTop">
         <ul id="listeNavTop">
-          <a href="connexion.html"><li>Accueil</li></a>
+          <a href="connexion.html"><li>Connexion</li></a>
           <a href="inscription.html"><li>Inscription</li></a>
-          <a href="motdepasse.html"><li>Mot de passe</li></a>
+          <a href="motdepasse.html"><li>Mot de passe oublié</li></a>
         </ul>
       </nav>
             <h1>Bienvenue dans "Le monde du Kitsch"</h1>
         </header>
+      
+    <!--Formulaire-->
+      
      <main>
-
          
          <section class="columnsI">
 <section class="paragrapheI">
         <p><strong> Veuillez vous créez un compte avant de commencer l'expérience</strong></p>  
     <a href="mailto:nullepart@mozilla.org?subject=Demande%20inscription%20newsletter&body=Inscrivez-moi%20%C3%A0%20votre%20newsletter%20%21%0D%0A%0D%0ANom%20complet%20%3A%0D%0A%0D%0AO%C3%B9%20avez-vous%20entendu%20parler%20de%20nous%20%3F">
-Inscrivez-vous à notre newsletter pour une expérience premium
-</a>
+Inscrivez-vous à notre newsletter pour une expérience premium </a>
 </section>
             
         <section class="formulaireI">
@@ -37,42 +38,40 @@ Inscrivez-vous à notre newsletter pour une expérience premium
         <label for="login">Login :</label>
         <input type="name" id="name" name="user_name" required>
     </div>
-    
+        
     <div>
         <label for="password">Mot de passe :</label>
         <input type="password" id="motdepasse" name="mot_de_passe" required>
     </div>
+        
+    <div>
+       <label for="userPassword">Confirmation Mot de passe :</label>
+       <input id="userPassword" type="password" required>
+    </div>
     
     <div>
-        <label for="login">Confirmation mot de passe :</label>
+       <label for="birthday">Date de naissance:</label>
+       <input type="date" id="birthday" name="birthday" value="2018-07-22" min="1900-01-01" max="2018-12-31">
+    </div>
+    
+    <div>
+        <label for="lastname">Nom :</label>
         <input type="name" id="name" name="name_login" required>
     </div>
     
     <div>
-        <label for="password">Date de naissance :</label>
+        <label for="vorname">Prénom :</label>
         <input type="password" id="motdepasse" name="mot_de_passe" required>
     </div>
     
+    <div></div>
+        <label for="emailAddress">Votre adresse email</label><br>
+        <input id="emailAddress" type="email" size="64" maxLength="64" required pattern=".+@lapleforme.io">
+        
     <div>
-        <label for="login">Nom :</label>
-        <input type="name" id="name" name="name_login" required>
-    </div>
-    
-    <div>
-        <label for="password">Prénom :</label>
-        <input type="password" id="motdepasse" name="mot_de_passe" required>
-    </div>
-
-    <div class="emailBox">
-   <label for="emailAddress">Votre adresse email</label><br>
-   <input id="emailAddress" type="email" size="64" maxLength="64" required
-         pattern=".+@lapleforme.io">
-    </div>
-    
-    <div>     
-    <label for="t1">Genre<abbr title="Ce champ est obligatoire">*</abbr></label>
-    <input type="text" id="t1" name="genre" list="l1" required>
-    <datalist id="l1">
+        <label for="t1">Genre<abbr title="Ce champ est obligatoire">*</abbr></label>
+        <input type="text" id="t1" name="genre" list="l1" required>
+        <datalist id="l1">
       <option>Femme</option>
       <option>Homme</option>
       <option>Dégenré</option>
@@ -81,13 +80,13 @@ Inscrivez-vous à notre newsletter pour une expérience premium
       <option>Fluide</option>
       <option>Non Binaire</option>
       <option>Ne veut pas répondre</option>
-    </datalist>
-    </div> 
+        </datalist>
+    </div>
     
-    
-    <label for="t2">Niveau d'études<abbr title="Ce champ est obligatoire">*</abbr></label>
-    <input type="text" id="t2" name="étude" list="l2" required>
-    <datalist id="l2">
+    <div>
+        <label for="t2">Niveau d'études<abbr title="Ce champ est obligatoire">*</abbr></label>
+        <input type="text" id="t2" name="étude" list="l2" required>
+        <datalist id="l2">
       <option>CAP, BEP</option>
       <option>Bac</option>
       <option>Bac+2</option>
@@ -96,56 +95,70 @@ Inscrivez-vous à notre newsletter pour une expérience premium
       <option>Bac+5</option>
       <option>Bac+8</option>
       <option>Dispenses de titres</option>
-    </datalist>
+        </datalist>
+    </div>
     
     <div>
-        <label for="password">Numéro de téléphone :</label>
+        <label for="number">Numéro de téléphone :</label>
         <input type="password" id="motdepasse" name="mot_de_passe" required>
     </div>
     
-     <div>
+    <div>
         <label for="description">Présentation :</label>
         <textarea id="description" name="user_message" required></textarea>
     </div>
     
-    <form method="get" action="#">
-     <label for="t2">Hobbie(s)<abbr title="Ce champ est obligatoire">*</abbr></label>
-    <!--<input type="text" id="t3" name="étude" list="l3" required>
-    <datalist id="l3">-->
-    <select multiple name="hobbies">
-      <option>Faire des recherches sur l'art kitsch</option>
-      <option>Parcourir des boutiques kitsch</option>
-      <option>Personnaliser ses affaires avec des accessoires kitsch</option>
-      <option>Acheter des affaires de couple kitsch</option>
-      <option>On ne connait pas le "too much"</option>
-      <option>Faire du tricot le dimanche avec sa grand-mère</option>
-      <option>Avoir un groupe de lecture</option>
-      <option>Regarder toutes les saisons de RPDR le dimanche avec une tasse de thé</option>
-    </select>
-        </form>
-    <!--</datalist>-->
     
-   <div class="Bouton">
-    <form action=inscription.html" method="get">
-    <button type="submit" formaction="connexion.html">Valider</button>
-    </form>                                             
+<div class="hobbies">
+      <p>Quels sont vos hobbies:</p>
+    <div>
+    <input type="checkbox" id="checkbox" name="Artkitsch"
+         checked>
+    <label for="Artkitsch">Faire des recherches sur l'art kitsch</label>
     </div>
     
-</form>
-     </section>  
+    <div>
+    <input type="checkbox" id="checkbox" name="boutiques">
+    <label for="boutiques">Parcourir des boutiques kitsch</label>
+    </div>
+    
+    <div>
+    <input type="checkbox" id="checkbox" name="couple">
+    <label for="couple">Acheter des affaires de couple kitsch</label>
+    </div>
+    
+    <div>
+    <input type="checkbox" id="checkbox" name="tricot">
+    <label for="tricot">Faire du tricot le dimanche avec sa grand-mère</label>
+    </div>
+    
+    <div>
+    <input type="checkbox" id="checkbox" name="PRDR">
+    <label for="RPDR">Regarder toutes les saisons de RPDR le dimanche avec une tasse de thé</label>
+    </div>
+</div>
+        
+             
+    <form action=inscription.html" method="get">
+    <button type="submit" formaction="connexion.html">Valider</button>
+    </form>  
+                                                     
+    </form> 
+</section>                                                  
     </section>
             
      </main>
+                                                     
+                                                     
          <!--Footer-->
     <footer>  
         <nav id="NavBottom">
         <ul>
             <a href="inscription.html">Création de compte</a>
             <a href=" motdepasse.html">Redéfinition de mot de passe</a>
-
         </ul>
         </nav>
     </footer>
 
-            </body>
-            </html>
+</body>
+</html>

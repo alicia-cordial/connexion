@@ -6,9 +6,6 @@ padding:0;
 
 }
 
- 
-
-
 body
 {
     background-image: url(unicorn-aesthetic-wallpaper.jpg);
@@ -62,7 +59,6 @@ li
   margin-right: 10px;
 }
 
-
 nav li 
 {
 font-family: 'Piazzolla', serif;
@@ -73,7 +69,7 @@ a
     color: green;
     display: flex;
     align-content: space-between;
-    
+    text-decoration: none; 
 }
 
 a:hover
@@ -87,10 +83,14 @@ form
   font-size: 1.6em;
 }
 
-
 label {
-  display: inline-block;
-  text-align: right;
+    display: inline;
+    font: 'Piazzolla', serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
 }
 
 input, textarea {
@@ -109,14 +109,6 @@ textarea {
   height: 5em;
 }
 
-.button {
-  padding-left: 90px;
-}
-
-button {
-  margin-left: .5em;
-}
-
 footer
 {
     display: flex;
@@ -129,7 +121,6 @@ footer
     width:100%;
     padding-top:25px;
     height:25px;
-
 }
 
 ul 
@@ -147,24 +138,27 @@ li
 }
 
 input:invalid {
-  border: 2px dashed red;
+  border: 2px solid red;
 }
 
 input:valid {
   border: 1px solid black;
 }
 
-select[multiple] {
+select[multiple] 
+{
   height: 1.5em;  
   vertical-align: top;
 }
 select[multiple]:focus,
-select[multiple]:active {
+select[multiple]:active 
+{
   height: auto;
 }
 
 
 /*class*/
+
 .columns
 {
     display: flex;
@@ -173,7 +167,6 @@ select[multiple]:active {
     margin-top: 30px;
 
 }
-
 
 .paragraphe
 {
@@ -190,11 +183,8 @@ select[multiple]:active {
     height: 500px;
     padding: 50px;
 	border-radius: 25px;
-    margin-top: 30px;
-    justify-content: flex-end;     
+    justify-content: flex-end;    
 }
-
-
 
 .formulaire
 {
@@ -214,7 +204,6 @@ select[multiple]:active {
     justify-content: flex-end;
 }
 
-
 .columnsI
 {
     display: flex;
@@ -223,7 +212,6 @@ select[multiple]:active {
     margin-top: 30px;
 }
 
-
 .paragrapheI
 {
     color: black;
@@ -231,7 +219,7 @@ select[multiple]:active {
     flex-direction: column;
     margin: 0;
     flex: 1 1 0;
-    font-size: 2em;
+    font-size: 1.6em;
     background-image: url(lamb2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -243,8 +231,6 @@ select[multiple]:active {
     justify-content: space-around;
 }
 
-
-
 .formulaireI
 {
     background-image: url(lamb2miroir.png);
@@ -252,7 +238,6 @@ select[multiple]:active {
     background-size: 100%;
     width: 450px;
     height: 450px;
-	justify-content: flex-end;
 	padding: 50px;
 	font-size: 12px;
 	border-radius: 25px;
@@ -260,19 +245,53 @@ select[multiple]:active {
     flex-direction: column;
     text-align: justify;
     margin-top: 30px;  
+    font-size: 0.6em;
     ;
 }
 
-
-.monBouton
+.columnsII
 {
-    background-color: white;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-.monBouton a:hover
+.paragrapheII
 {
-    background-color: chartreuse;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1 1 0;
+    font-size: 2em;
+    background-image: url(chatsmusiquemiroir.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 450px;
+    height: 450px;
+    padding: 50px;
+	border-radius: 25px;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.formulaireII
+{
+    background-image: url(chatsmusique.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 450px;
+    height: 450px;
+	padding: 50px;
+	font-size: 12px;
+	border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 30px;  
+    font-size: 1em;
+    ;
 }
 
 

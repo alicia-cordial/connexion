@@ -12,9 +12,9 @@
         <header>
       <nav id="navTop">
         <ul id="listeNavTop">
-          <a href="connexion.html"><li>Accueil</li></a>
+          <a href="connexion.html"><li>Connexion</li></a>
           <a href="inscription.html"><li>Inscription</li></a>
-          <a href="motdepasse.html"><li>Mot de passe</li></a>
+          <a href="motdepasse.html"><li>Mot de passe oublié</li></a>
         </ul>
       </nav>
             <h1>Bienvenue dans "Le monde du Kitsch"</h1>
@@ -30,16 +30,17 @@
             
         <section class="formulaire">
 <form action="/ma-page-de-traitement" method="post">
-    <div>
-        <label for="login">Login :</label>
-        <input type="name" id="name" name="name_login" required>
-    </div>
     
-    <div>
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="motdepasse" name="mot_de_passe" required>
-    </div>
-    
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+</div>
+
+<div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>    
     
     <input type="submit" class="monBouton" value="Valider">
 </form>
