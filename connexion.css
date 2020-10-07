@@ -1,11 +1,3 @@
-*{
-
-margin:0;
-
-padding:0;
-
-}
-
 body
 {
     background-image: url(unicorn-aesthetic-wallpaper.jpg);
@@ -19,6 +11,7 @@ body
     margin: 0px;
     padding: 0px;
     font-family: 'Piazzolla', serif;
+    font-weight: bold;
 }
 
 main
@@ -50,23 +43,24 @@ ul
   padding: 0;
   display: flex;
   flex-direction: row;
-  align-content: space-around;  
 }
+
 
 li 
 {
   margin-left: 10px;
   margin-right: 10px;
+  text-align: center;
 }
 
 nav li 
 {
-font-family: 'Piazzolla', serif;
+font-family: 'Piazzolla', serif; 
 }
 
 a
 {
-    color: green;
+    color: dodgerblue;
     display: flex;
     align-content: space-between;
     text-decoration: none; 
@@ -74,7 +68,7 @@ a
 
 a:hover
 {
-    color: lightcoral;
+    color: deeppink;
 }
 
 
@@ -83,28 +77,33 @@ form
   font-size: 1.6em;
 }
 
-label {
+label 
+{
     display: inline;
     font: 'Piazzolla', serif;
 }
 
 input[type='submit'],
-label {
+label 
+{
     margin-top: 1rem;
 }
 
-input, textarea {
+input, textarea 
+{
   font: 'Piazzolla', serif;
   width: 100px;
   box-sizing: border-box;
   border: 1px solid #999;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus 
+{
   border-color: #000;
 }
 
-textarea {
+textarea 
+{
   vertical-align: top;
   height: 5em;
 }
@@ -112,6 +111,7 @@ textarea {
 footer
 {
     display: flex;
+    display: inline-block;
     flex-direction: column;
     border-radius: 20px;
 	background-image: url(gradient%20copie%202.png);
@@ -121,28 +121,18 @@ footer
     width:100%;
     padding-top:25px;
     height:25px;
+    padding-bottom: 10px;
 }
 
-ul 
+
+input:invalid 
 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li 
-{
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
-}
-
-input:invalid {
   border: 2px solid red;
 }
 
-input:valid {
-  border: 1px solid black;
+input:valid 
+{
+  border: 1px solid deeppink;
 }
 
 select[multiple] 
@@ -150,6 +140,7 @@ select[multiple]
   height: 1.5em;  
   vertical-align: top;
 }
+
 select[multiple]:focus,
 select[multiple]:active 
 {
@@ -170,7 +161,7 @@ select[multiple]:active
 
 .paragraphe
 {
-    color: black;
+    color: deeppink;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -183,7 +174,8 @@ select[multiple]:active
     height: 500px;
     padding: 50px;
 	border-radius: 25px;
-    justify-content: flex-end;    
+    justify-content: flex-end; 
+    text-shadow: 2px 2px 2px black;
 }
 
 .formulaire
@@ -202,6 +194,8 @@ select[multiple]:active
     text-align: justify;
     margin-top: 30px;
     justify-content: flex-end;
+    color: deeppink;
+    text-shadow: 1px 1px 1px black;
 }
 
 .columnsI
@@ -214,7 +208,7 @@ select[multiple]:active
 
 .paragrapheI
 {
-    color: black;
+    color: dodgerblue;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -229,6 +223,7 @@ select[multiple]:active
 	border-radius: 25px;
     margin-top: 30px;
     justify-content: space-around;
+     text-shadow: 2px 2px 2px black;
 }
 
 .formulaireI
@@ -246,6 +241,8 @@ select[multiple]:active
     text-align: justify;
     margin-top: 30px;  
     font-size: 0.6em;
+    color: green;
+     text-shadow: 1px 1px 1px black;
     ;
 }
 
@@ -259,7 +256,7 @@ select[multiple]:active
 
 .paragrapheII
 {
-    color: black;
+    color: gold;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -274,6 +271,7 @@ select[multiple]:active
 	border-radius: 25px;
     margin-top: 30px;
     justify-content: flex-start;
+    text-shadow: 2px 2px 2px black;
 }
 
 .formulaireII
@@ -291,6 +289,8 @@ select[multiple]:active
     text-align: justify;
     margin-top: 30px;  
     font-size: 1em;
+    color: gold;
+    text-shadow: 2px 2px 2px black;
     ;
 }
 
@@ -302,6 +302,4 @@ select[multiple]:active
   border-radius: 25px;
   position: fixed;
   top:0;
-   
-  
 }
