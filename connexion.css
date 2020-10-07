@@ -170,12 +170,14 @@ select[multiple]:active
     background-image: url(chat.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 350px;
+    width: 400px;
     height: 500px;
     padding: 50px;
-	border-radius: 25px;
+    margin-top: 30px;
+	border-radius: 20px;
     justify-content: flex-end; 
     text-shadow: 2px 2px 2px black;
+    justify-content: center;
 }
 
 .formulaire
@@ -183,7 +185,7 @@ select[multiple]:active
     background-image: url(chatmiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 350px;
+    width: 400px;
     height: 500px;
 	justify-content: center;
 	padding: 50px;
@@ -193,7 +195,6 @@ select[multiple]:active
     flex-direction: column;
     text-align: justify;
     margin-top: 30px;
-    justify-content: flex-end;
     color: deeppink;
     text-shadow: 1px 1px 1px black;
 }
@@ -218,7 +219,7 @@ select[multiple]:active
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
-    height: 450px;
+    height: 480px;
     padding: 50px;
 	border-radius: 25px;
     margin-top: 30px;
@@ -232,7 +233,7 @@ select[multiple]:active
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
-    height: 450px;
+    height: 480px;
 	padding: 50px;
 	font-size: 12px;
 	border-radius: 25px;
