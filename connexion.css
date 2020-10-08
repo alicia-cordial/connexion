@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(unicorn-aesthetic-wallpaper.jpg);
+    background-image: url(images/unicorn-aesthetic-wallpaper.jpg);
     background-repeat: repeat;
     background-size: 10%;
     display: flex;
@@ -27,7 +27,7 @@ header
     justify-content: space-around;
     flex-direction: column;
     border-radius: 20px;
-	background-image: url(gradient%20copie%202.png);
+	background-image: url(images/gradient%20copie%202.png);
     background-repeat: repeat;
     position:absolute;
     top:0;
@@ -114,7 +114,7 @@ footer
     display: inline-block;
     flex-direction: column;
     border-radius: 20px;
-	background-image: url(gradient%20copie%202.png);
+	background-image: url(images/gradient%20copie%202.png);
     background-repeat: repeat;
     position:absolute;
     bottom:0;
@@ -167,7 +167,7 @@ select[multiple]:active
     margin: 0;
     flex: 1 1 0;
     font-size: 2em;
-    background-image: url(chat.jpg);
+    background-image: url(images/chat.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 400px;
@@ -182,7 +182,7 @@ select[multiple]:active
 
 .formulaire
 {
-    background-image: url(chatmiroir.png);
+    background-image: url(images/chatmiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 400px;
@@ -215,7 +215,7 @@ select[multiple]:active
     margin: 0;
     flex: 1 1 0;
     font-size: 1.6em;
-    background-image: url(lamb2.jpg);
+    background-image: url(images/lamb2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
@@ -229,7 +229,7 @@ select[multiple]:active
 
 .formulaireI
 {
-    background-image: url(lamb2miroir.png);
+    background-image: url(images/lamb2miroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
@@ -263,7 +263,7 @@ select[multiple]:active
     margin: 0;
     flex: 1 1 0;
     font-size: 2em;
-    background-image: url(chatsmusiquemiroir.png);
+    background-image: url(images/chatsmusiquemiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
@@ -277,7 +277,7 @@ select[multiple]:active
 
 .formulaireII
 {
-    background-image: url(chatsmusique.jpg);
+    background-image: url(images/chatsmusique.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 450px;
