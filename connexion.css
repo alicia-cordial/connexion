@@ -7,11 +7,11 @@ body
     flex-direction: column;
     text-align: center;
     align-content: center;
-    height: 100vh;
+    height: 170vh;
     margin: 0px;
-    padding: 0px;
     font-family: 'Piazzolla', serif;
     font-weight: bold;
+    justify-content: space-around;
 }
 
 main
@@ -23,18 +23,29 @@ main
 
 header 
 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    border-radius: 20px;
-	background-image: url(images/gradient%20copie%202.png);
-    background-repeat: repeat;
-    position:absolute;
-    top:0;
-    width:100%;
-    padding-top:25px;
-    height:30px;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: #222;
+  background-image: url(images/gradient%20copie%202.png);
 }
+
+
+h1 
+{
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
 
 ul 
 {
@@ -83,23 +94,30 @@ label
     font: 'Piazzolla', serif;
 }
 
-input[type='submit'],
-label 
-{
-    margin-top: 1rem;
-}
 
 input, textarea 
 {
   font: 'Piazzolla', serif;
-  width: 100px;
+  width: 200px;
   box-sizing: border-box;
-  border: 1px solid #999;
+  border: 1px solid white;
 }
 
 input:focus, textarea:focus 
 {
   border-color: #000;
+}
+
+input[type="submit"], button
+{
+    width: 70px;
+    height: 40px;
+    cursor:pointer;
+    background-color: pink;
+    color: lightskyblue;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px white;
+    border: none;
 }
 
 textarea 
@@ -116,7 +134,7 @@ footer
     border-radius: 20px;
 	background-image: url(images/gradient%20copie%202.png);
     background-repeat: repeat;
-    position:absolute;
+    position:relative;
     bottom:0;
     width:100%;
     padding-top:25px;
@@ -127,12 +145,12 @@ footer
 
 input:invalid 
 {
-  border: 2px solid red;
+  border: 2px solid black;
 }
 
 input:valid 
 {
-  border: 1px solid deeppink;
+  border: 1px solid pink;
 }
 
 select[multiple] 
@@ -150,13 +168,11 @@ select[multiple]:active
 
 /*class*/
 
-.columns
+.columns, .columnsI, .columnsII
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 30px;
-
 }
 
 .paragraphe
@@ -173,7 +189,6 @@ select[multiple]:active
     width: 400px;
     height: 500px;
     padding: 50px;
-    margin-top: 30px;
 	border-radius: 20px;
     justify-content: flex-end; 
     text-shadow: 2px 2px 2px black;
@@ -194,17 +209,8 @@ select[multiple]:active
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-top: 30px;
     color: deeppink;
     text-shadow: 1px 1px 1px black;
-}
-
-.columnsI
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
 }
 
 .paragrapheI
@@ -218,12 +224,11 @@ select[multiple]:active
     background-image: url(images/lamb2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 450px;
-    height: 480px;
+    width: 540px;
+    height: 580px;
     padding: 50px;
 	border-radius: 25px;
-    margin-top: 30px;
-    justify-content: space-around;
+    justify-content: justify;
      text-shadow: 2px 2px 2px black;
 }
 
@@ -232,27 +237,17 @@ select[multiple]:active
     background-image: url(images/lamb2miroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 450px;
-    height: 480px;
+    width: 540px;
+    height: 580px;
 	padding: 50px;
 	font-size: 12px;
 	border-radius: 25px;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    margin-top: 30px;  
+    text-align: justify; 
     font-size: 0.6em;
     color: green;
      text-shadow: 1px 1px 1px black;
-    ;
-}
-
-.columnsII
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
 }
 
 .paragrapheII
@@ -270,7 +265,6 @@ select[multiple]:active
     height: 450px;
     padding: 50px;
 	border-radius: 25px;
-    margin-top: 30px;
     justify-content: flex-start;
     text-shadow: 2px 2px 2px black;
 }
@@ -287,12 +281,10 @@ select[multiple]:active
 	border-radius: 25px;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    margin-top: 30px;  
+    text-align: justify;  
     font-size: 1em;
     color: gold;
     text-shadow: 2px 2px 2px black;
-    ;
 }
 
 
@@ -303,4 +295,51 @@ select[multiple]:active
   border-radius: 25px;
   position: fixed;
   top:0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+   color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; 
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+ color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  }
 }
