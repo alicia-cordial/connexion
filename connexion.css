@@ -7,11 +7,11 @@ body
     flex-direction: column;
     text-align: center;
     align-content: center;
-    height: 170vh;
     margin: 0px;
     font-family: 'Piazzolla', serif;
     font-weight: bold;
     justify-content: space-around;
+    height: 180vh;
 }
 
 main
@@ -23,11 +23,9 @@ main
 
 header 
 {
-  padding: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
   background: #222;
   background-image: url(images/gradient%20copie%202.png);
 }
@@ -35,8 +33,8 @@ header
 
 h1 
 {
-  font-size: calc(20px + 18vh);
-  line-height: calc(20px + 20vh);
+  font-size: 5em;
+  line-height: 5em;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff;
   font-family: "Sacramento", cursive;
@@ -44,8 +42,6 @@ h1
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
-
-
 
 ul 
 {
@@ -172,27 +168,31 @@ select[multiple]:active
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+   
+}
+
+.paragraphe, .formulaire
+{
+    display: flex;
+    flex-direction: column; 
+    border-radius: 25px;
+     width: 400px;
+    height: 500px;
+    padding: 50px;
+    justify-content: flex-end; 
 }
 
 .paragraphe
 {
     color: deeppink;
-    display: flex;
-    flex-direction: column;
+   
     margin: 0;
     flex: 1 1 0;
     font-size: 2em;
     background-image: url(images/chat.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 400px;
-    height: 500px;
-    padding: 50px;
-	border-radius: 20px;
-    justify-content: flex-end; 
     text-shadow: 2px 2px 2px black;
-    justify-content: center;
 }
 
 .formulaire
@@ -200,36 +200,33 @@ select[multiple]:active
     background-image: url(images/chatmiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 400px;
-    height: 500px;
-	justify-content: center;
-	padding: 50px;
 	font-size: 12px;
-	border-radius: 25px;
-    display: flex;
-    flex-direction: column;
     text-align: justify;
     color: deeppink;
     text-shadow: 1px 1px 1px black;
 }
 
-.paragrapheI
+.paragrapheI, .formulaireI
 {
-    color: dodgerblue;
+    width: 540px;
+    height: 580px;
+    padding: 50px;  
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    flex: 1 1 0;
-    font-size: 1.6em;
+    text-align: justify; 
+}
+
+.paragrapheI
+{
     background-image: url(images/lamb2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 540px;
-    height: 580px;
-    padding: 50px;
-	border-radius: 25px;
-    justify-content: justify;
-     text-shadow: 2px 2px 2px black;
+    font-size: 1.6em;
+	color: dodgerblue;
+    margin: 0;
+    flex: 1 1 0;
+    text-shadow: 2px 2px 2px black;
 }
 
 .formulaireI
@@ -237,36 +234,33 @@ select[multiple]:active
     background-image: url(images/lamb2miroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 540px;
-    height: 580px;
-	padding: 50px;
 	font-size: 12px;
-	border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: justify; 
     font-size: 0.6em;
     color: green;
-     text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+.paragrapheII, .formulaireII
+{
+    display: flex;
+    flex-direction: column; 
+    width: 450px;
+    height: 450px;
+	padding: 50px;
+    border-radius: 25px;
+    text-shadow: 2px 2px 2px black;
+    color: gold;
 }
 
 .paragrapheII
 {
-    color: gold;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     flex: 1 1 0;
     font-size: 2em;
     background-image: url(images/chatsmusiquemiroir.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 450px;
-    height: 450px;
-    padding: 50px;
-	border-radius: 25px;
-    justify-content: flex-start;
-    text-shadow: 2px 2px 2px black;
+    justify-content: flex-start;  
 }
 
 .formulaireII
@@ -274,17 +268,9 @@ select[multiple]:active
     background-image: url(images/chatsmusique.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 450px;
-    height: 450px;
-	padding: 50px;
 	font-size: 12px;
-	border-radius: 25px;
-    display: flex;
-    flex-direction: column;
     text-align: justify;  
     font-size: 1em;
-    color: gold;
-    text-shadow: 2px 2px 2px black;
 }
 
 
